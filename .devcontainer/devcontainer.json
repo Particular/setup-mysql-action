@@ -1,0 +1,24 @@
+{
+  "name": "Dev",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "24" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.powershell",
+        "eg2.vscode-npm-script",
+        "mikestead.dotenv",
+        "christian-kohler.npm-intellisense"
+      ]
+    }
+  },
+  "forwardPorts": [3306],
+  "remoteUser": "node",
+  "features": {
+    "docker-in-docker": "latest",
+    "powershell": "latest"
+  }
+}
