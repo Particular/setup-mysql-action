@@ -45,7 +45,7 @@ jobs:
           }
           Write-Host "Rows in init_test.round_trip: $result"
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v6.0.0
+        uses: actions/setup-dotnet@v6.1.0
         with:
           dotnet-version: 10.0.x
       - name: Test
